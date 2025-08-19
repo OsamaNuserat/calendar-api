@@ -1,4 +1,4 @@
-# Calendar UBA
+# Calendar
 
 A full-stack calendar application with Google Calendar integration.
 
