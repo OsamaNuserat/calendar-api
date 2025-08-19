@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom styles for react-big-calendar */
+.rbc-calendar {
+  @apply bg-white rounded-xl shadow-lg;
+}
+
+.rbc-header {
+  @apply bg-gray-50 text-gray-700 font-semibold py-3 border-b border-gray-200;
+}
+
+.rbc-event {
+  @apply bg-primary-500 text-white border-none rounded-md shadow-sm;
+  transition: all 0.2s ease-in-out;
+}
+
+.rbc-event:hover {
+  @apply bg-primary-600;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rbc-today {
+  @apply bg-blue-50;
+}
+
+.rbc-toolbar {
+  @apply p-4 border-b border-gray-200 bg-gray-50;
+}
+
+.rbc-toolbar button {
+  @apply bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-all duration-200 font-medium;
+}
+
+.rbc-toolbar button.rbc-active {
+  @apply bg-primary-500 text-white border-primary-500 shadow-sm;
+}
+
+.rbc-month-view {
+  @apply border-gray-200;
+}
+
+.rbc-day-bg {
+  @apply border-gray-200;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-50;
+}
+
+.rbc-off-range {
+  @apply text-gray-400;
+}
+
+.rbc-date-cell {
+  @apply p-2 font-medium;
+}
+
+.rbc-time-view {
+  @apply border-gray-200;
+}
+
+.rbc-time-header {
+  @apply border-gray-200;
+}
+
+.rbc-time-content {
+  @apply border-gray-200;
+}
+
+.rbc-timeslot-group {
+  @apply border-gray-200;
+}
+
+.rbc-time-slot {
+  @apply border-gray-100;
+} 
